@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -10,6 +11,13 @@ import Transactions from "./pages/Transactions";
 import Notifications from "./pages/Notifications";
 import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
+import Projects from "./pages/Projects";
+import Search from "./pages/Search";
+import Data from "./pages/Data";
+import DataProducts from "./pages/DataProducts";
+import AiMl from "./pages/AiMl";
+import Monitoring from "./pages/Monitoring";
+import Admin from "./pages/Admin";
 
 const queryClient = new QueryClient();
 
@@ -19,9 +27,9 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <div className="flex min-h-screen bg-background">
+        <div className="flex min-h-screen bg-gray-50">
           <Sidebar />
-          <main className="flex-1 ml-64 p-8">
+          <main className="flex-1 ml-56 py-6 px-8">
             <div className="max-w-7xl mx-auto">
               <Routes>
                 <Route path="/" element={<Index />} />
@@ -30,6 +38,13 @@ const App = () => (
                 <Route path="/notifications" element={<Notifications />} />
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/settings" element={<Settings />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/search" element={<Search />} />
+                <Route path="/data" element={<Data />} />
+                <Route path="/data-products" element={<DataProducts />} />
+                <Route path="/ai-ml" element={<AiMl />} />
+                <Route path="/monitoring" element={<Monitoring />} />
+                <Route path="/admin" element={<Admin />} />
               </Routes>
             </div>
           </main>
