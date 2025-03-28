@@ -163,8 +163,8 @@ const DataProducts = () => {
                     <LineChart className="h-10 w-10 text-gray-400 mx-auto mb-2" />
                     <p className="text-sm text-gray-500">Performance metrics chart goes here</p>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </CardContent>
             </Card>
           </div>
 
